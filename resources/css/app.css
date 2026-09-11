@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-char text-paper font-body antialiased;
+    }
+    h1, h2, h3, h4 {
+        @apply font-display tracking-wide;
+    }
+    :focus-visible {
+        outline: 2px solid #E8B23D;
+        outline-offset: 3px;
+    }
+}
+
+@layer utilities {
+    .text-outline {
+        -webkit-text-stroke: 1px rgba(244, 236, 216, 0.35);
+    }
+    .bg-char-gradient {
+        background: radial-gradient(120% 120% at 15% 0%, #2A211B 0%, #1B1410 55%, #140F0C 100%);
+    }
+}
